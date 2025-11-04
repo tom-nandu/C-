@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+  {
+     int n ; 
+     std::cout << "enter value of n : "; 
+     std::cin >> n ;
+             
+     for(int i=0;i<n;i++)
+       {
+         std::cout << "*" ;
+       }
+  }
+
+/* EXPECTED OUTPUT : 
+enter value of n : 5
+*****
+*/
