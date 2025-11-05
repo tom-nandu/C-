@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+class Student 
+{
+    public:
+    
+    std::string Name ;
+    int Roll_no ;
+    double Marks ;
+    
+    Student(std::string name , int roll , double marks) 
+    {
+        this->Name    = name  ;
+        this->Roll_no = roll  ;
+        this->Marks   = marks ;
+    }
+    
+    void display()
+    {
+        std::cout << "Name: " << Name << std::endl;
+        std::cout << "Roll No: " << Roll_no <<   std::endl;
+        std::cout << "Marks: " << Marks <<   std::endl;
+    }
+};
+
+
+int main()
+{
+    Student One("Nandu" , 29 , 89 ) ;
+    One.display();
+}
