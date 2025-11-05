@@ -1,0 +1,23 @@
+#include<iostream>
+#include <cstring>
+
+int main()
+{
+    char str1[100] , str2[100];
+    
+    std::cout << "Enter the str1 : " ;
+    std::cin >> str1 ;
+    
+    std::cout << "Enter the str2 : " ;
+    std::cin >> str2 ;
+    
+    if(strcmp(str1,str2)==0)
+    {
+        std::cout<<"STRINGS ARE EQUAL" ;
+    }
+    else
+    {
+          std::cout<<"STRINGS ARE NOT EQUAL" ;
+    }
+    
+}
