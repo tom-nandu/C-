@@ -37,3 +37,32 @@ void Student::setter_marks(double marks) {
 void Student::display() const {
     std::cout << "Name: " << Name << "\nAge: " << Age << "\nMarks: " << Marks << std::endl;
 }
+
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+int rollDice() {
+    return rand() % 6 + 1; // returns a number between 1 and 6
+}
+
+int main() {
+    srand(static_cast<unsigned int>(time(0))); // seed random number generator
+
+    int player1 = rollDice();
+    int player2 = rollDice();
+
+    std::cout << "Player 1 rolls: " << player1 << std::endl;
+    std::cout << "Player 2 rolls: " << player2 << std::endl;
+
+    if (player1 > player2) {
+        std::cout << "Player 1 wins!" << std::endl;
+    } else if (player2 > player1) {
+        std::cout << "Player 2 wins!" << std::endl;
+    } else {
+        std::cout << "It's a tie!" << std::endl;
+    }
+
+    return 0;
+}
